@@ -1,0 +1,54 @@
+body{
+    background-color:whitesmoke;
+    
+    
+}
+
+button{
+    margin-top: 10%;
+    width: 50%;
+    height: 30%;
+    margin-left: 20%;
+    /* position:static;
+    margin:20%; */
+}
+
+.container{
+
+    margin-left: 10%;
+}
+.img-fluid{
+    /* position: fixed; */
+    margin-top: 4%;
+    margin-left: 28%;
+    /* margin-right: 30%; */
+}
+.berhenti{
+    width: 60%;
+}
+
+/* Mobile */
+/* // Small devices (landscape phones, 576px and up) */
+@media (max-width: 576.98px) {
+    /*  */
+ }
+
+/* // Medium devices (tablets, 768px and up) */
+@media (max-width: 768.98px) {
+    /*  */
+ }
+
+/* // Large devices (desktops, 992px and up) */
+@media (max-width: 991.98px) { 
+    /*  */
+ }
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (max-width: 1199.98px) { 
+    /*  */
+}
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (max-width: 1399.98px) { 
+    /*  */
+ }

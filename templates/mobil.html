@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS boostrap Online -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <!-- CSS Boostrap Offline -->
+    <link rel="stylesheet" href="./bootstrap-5.0.0-beta3-dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap" rel="stylesheet">
+    <!-- CSS Local -->
+    <link rel="stylesheet" href="./rasp.css">
+
+    <style>
+        body{
+            background-color: darkslategrey;
+            margin: 0;
+        }
+        button{
+            margin-top: 5%;
+            width: auto;
+            /* height: 30%; */
+            /* margin-left: 20%; */
+            /* position:static;
+            margin:20%; */
+        }
+        button:hover {
+           box-shadow: 30%;  
+           transform: scale(1.3)
+        }
+    
+        a{
+            text-decoration: none;
+            color: white;
+        }
+
+        .container{
+            position:fixed;
+            border: 2px dashed green;
+            margin-left: 10%;
+        }
+        .jumbotron{
+            position: solid;
+            margin-top: 1%;
+            margin-bottom: 2%;
+            margin-left: 0%;
+            margin-right: 10%;
+        }
+        .berhenti{
+            margin-top: 3%;
+            width: 60%;
+            height:auto;
+        }
+        .col-3{
+            width:50%;
+            height: 20%;
+        }
+        img{
+            margin-left: 30%;
+        }
+        .Judul{
+            /* margin-bottom:; */
+            font-family: 'Lora', serif;
+        }
+        .cam{
+            text-align:center;
+            margin-left: 20%;
+        }
+        hr{
+            width:50%;
+            margin-left:25%;
+            color: chartreuse;
+        }
+        .reload{
+            margin-top:30%;
+        }
+        /* Mobile */
+        /* // Small devices (landscape phones, 576px and up) */
+        @media (max-width: 576.98px) {
+            /*  */
+        }
+
+        /* // Medium devices (tablets, 768px and up) */
+        @media (max-width: 768.98px) {
+            /*  */
+      
+        .container{
+            position:fixed;
+            border: 2px dashed green;
+            margin-left: 10%;
+        }
+        .jumbotron{
+            position: solid;
+            margin-top: 1%;
+            margin-bottom: 2%;
+            margin-left: 0%;
+            margin-right: 10%;
+        }
+            
+        }
+
+        /* // Large devices (desktops, 992px and up) */
+        @media (max-width: 991.98px) { 
+            /*  */
+        }
+
+        /* // X-Large devices (large desktops, 1200px and up) */
+        @media (max-width: 1199.98px) { 
+            /*  */
+        }
+
+        /* // XX-Large devices (larger desktops, 1400px and up) */
+        @media (max-width: 1399.98px) { 
+            /*  */
+        }
+    </style>
+
+
+
+
+    <title>Program Mobil</title>
+</head>
+<body id = "ref">
+
+    <h1 class="Judul text-center" >Kontrol Mobil Melalui Web Menggunakan Kamera <hr></h1>
+    <div class="jumbotron">
+        <h4 class="cam">Kamera</h4>
+        ​<picture>
+            <!-- <button type="button" class="btn btn-danger reload">Reload</button> -->
+           <source srcset="https://source.unsplash.com/random/800x300" type="image/svg+xml" >
+            <img src="http://{{ip}}:8080/?action=stream" class="img-fluid img-thumbnail text-center" alt="No Response!. Please Check Your Web Cam!. if done, Please Reload this page">
+          </picture>
+
+        <!-- <img src="https://source.unsplash.com/random/800x300" class="rounded" alt="No Image Found!"> -->
+    </div>
+        <div class="container">
+            <h4 class="text-center">Controller</h4>
+            <div class="row">
+                <div class="">
+                    <a href="#" id="maju"><button type="button" class="btn btn-success">Maju </button></a>
+                </div>
+                <div class="">
+                    <a href="#" id="mundur"><button type="button" class="btn btn-primary">Mundur</button></a>
+                </div>
+                <div class="">
+                    <a href="#"id="kanan"><button type="button" class="btn btn-info"> Kanan</button></a>
+                </div>
+                <div class="">
+                    <a href="#" id="kiri"><button type="button" class="btn btn-dark"> Kiri</button> </a>
+                </div>
+                <div class="">
+                    <a href="#" id="berhenti"><button type="button" class="btn btn-danger berhenti">Berhenti </button></a>
+                </div>
+            </div>
+            
+        
+<!-- 
+    
+                <div class="col-lg-12">
+                    <a href="/berhenti"><button type="button" class="btn btn-danger berhenti">Berhenti </button></a>
+                    <a href="/test"><button type="button" class="btn btn-danger berhenti">Test</button></a>
+                 </div> -->
+       
+        </div>
+
+        
+
+
+
+    <!-- JS Boostrap Online -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <!-- JS Boostrap Offline -->
+    <script src="./bootstrap-5.0.0-beta3-dist/js/bootstrap.bundle.min.js"></script>
+    
+</body>
+</html>
