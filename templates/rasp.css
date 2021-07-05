@@ -1,32 +1,98 @@
 body{
-    background-color:whitesmoke;
-    
-    
-}
-
-button{
-    margin-top: 10%;
-    width: 50%;
-    height: 30%;
-    margin-left: 20%;
-    /* position:static;
-    margin:20%; */
-}
-
-.container{
-
-    margin-left: 10%;
-}
-.img-fluid{
+    background-image: url('../template.jpg');
+    /* align-content: center;    */
+    margin:0;
+    padding:0; 
     /* position: fixed; */
-    margin-top: 4%;
-    margin-left: 28%;
-    /* margin-right: 30%; */
+    
+}
+h1{
+    position: fixed;
+}
+img{
+    position: absolute;
+    /* display: block; */
+    margin-left:2%;
+    margin-right: auto;
+    width: 50%;
+
+
+}
+.col-8{
+    margin-left:40%;
+}
+
+#kanan{
+    margin-left: 40%;
+}
+
+#kiri{
+    margin-left: 35%;
+}
+.second-judul, .judul{
+    font-size:200%;
+    font-family: sans-serif;
+    font-weight: 700;
+}
+.utility{
+    margin-left:10%
 }
 .berhenti{
-    width: 60%;
+    margin-left:20%;
 }
+button{
+    /* margin-top: 2%; */
+    width: 30%;
+    height: 100%;
+    margin-left: auto;
 
+}
+.pic{
+    width: auto;
+    margin-left: 10%;
+
+}
+hr{
+    width:50%;
+    margin: auto;
+    color: rgb(26, 54, 179);
+}
+.cam{
+    text-align:center;
+    /* margin-left: 20%; */
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+source{
+    margin-top:20%;
+    position: fixed;
+}
+button:hover {
+    box-shadow: 30%;  
+    transform: scale(1.3)
+ }
+.jumbotron{
+    margin-top: auto;
+    margin-bottom: 10%;
+    margin-left: 15%;
+    margin-right: auto;
+}
+.container{
+    /* position: initial; */
+    margin-top: 20%;
+    border: 2px dashed green;
+    /* margin-left: 10%; */
+    width:40%;
+    justify-content:center;
+}
+.img-fluid{
+    position: fixed;
+    margin-top: 4%;
+    margin-left: 28%;
+    margin-right: 30%;
+} 
 /* Mobile */
 /* // Small devices (landscape phones, 576px and up) */
 @media (max-width: 576.98px) {
@@ -35,7 +101,33 @@ button{
 
 /* // Medium devices (tablets, 768px and up) */
 @media (max-width: 768.98px) {
-    /*  */
+    .judul{
+        font-size: 100%;
+    }
+    .spinner-grow{
+        width: 10%;
+        height:10%;
+    }
+    .second-judul{
+        font-weight: 200;
+    }
+    .container{
+        /* position:fixed; */
+        border: 2px dashed green;
+        /* margin-left: 10%; */
+        width:70%;
+        justify-content:center;
+    }
+    .berhenti{
+        margin-top: 10%;
+    }
+    button{
+        /* margin-top: 2%; */
+        width: 100%;
+        height: 100%;
+        margin-left: auto;
+    
+    }
  }
 
 /* // Large devices (desktops, 992px and up) */
