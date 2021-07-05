@@ -19,16 +19,15 @@
 
   <!-- Body -->
   <body>
-    <h1>Live Streaming <div class="spinner-grow text-danger" role="status">
-		<span class="sr-only"></span>
-	</div> </h1>
-	<h1 class="Judul text-center" >Prototipe Robot Personal Asisstant Keamanan<hr></h1>
+    <h1 class="judul">Live Streaming <div class="spinner-grow text-danger" role="status">
+	</div></h1>
+	<h2 class="second-judul text-center" >Prototype Robot Personal Asisstant Keamanan<hr></h2>
 	<h4 class="cam">Kamera</h4>
 	<div class="jumbotron">
 	<picture class="pic">
 	
 	  <source srcset="https://source.unsplash.com/random/800x300" type="image/svg+xml" >
-	<img src="{{ url_for('video_feed')}} class=img-fluid img-thumbnail text-center" alt="No Response!. Please Check Your WebCam!. if done, Please Reload this page">
+	<img src="{{ url_for('video_feed')}} class=img-fluid img-thumbnail text-center" alt="No Response!. Please Check Your WebCam!. if done, Please Click Refresh button!">
 	</picture>
 </div>
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
@@ -94,28 +93,29 @@
 
 <div class="container">
 	<h4 class="text-center">Controller</h4>
-	<div class="row justify-content-center">
+	<div class="rows">
 		<div class="col-8">
 			<a href="#" id="maju"><button type="button" class="btn btn-success">Maju </button></a>
 		</div>
 		</div>
 		<br>
 		<!-- Awal -->
-		<div class="row justify-content-start">
+		<div class="row">
 			<div class="col-6">
-				<a href="#"id="kanan"><button type="button" class="btn btn-info"> Kanan</button></a>
+				<a href="#"id="kiri"><button type="button" class="btn btn-info"> Kiri</button></a>
 			</div>
 			<div class="col-6">
-				<a href="#" id="kiri"><button type="button" class="btn btn-dark"> Kiri</button> </a>
+				<a href="#" id="kanan"><button type="button" class="btn btn-dark"> kanan</button> </a>
 			</div>
 		  </div>
 <br>
-<div class="row justify-content-center">
+<div class="row">
 	<div class="col-8">
 		<a href="#" id="mundur"><button type="button" class="btn btn-primary">Mundur</button></a>
 	</div>
 	</div>
 	<br>
+
 
 
 
@@ -135,9 +135,12 @@
 		<div class="">
 			<a href="#" id="kiri"><button type="button" class="btn btn-dark"> Kiri</button> </a>
 		</div> -->
-		<div class="">
-			<a href="#" id="berhenti"><button type="button" class="btn btn-danger berhenti">Berhenti </button></a>
+		<div class="utility">
+			<a href="#" id="berhenti"><button type="button" class="btn btn-danger">Berhenti </button></a>
+			<a href="index.html" id="Refresh"><button type="button" class="btn btn-warning berhenti">Refresh </button></a>
 		</div>
+		<br>
 	</div>
+
   </body>
 </html>

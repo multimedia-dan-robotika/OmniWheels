@@ -1,16 +1,45 @@
 body{
-    background-color:whitesmoke;
+    background-image: url('../template.jpg');
     /* align-content: center;    */
-    margin:0; 
+    margin:0;
+    padding:0; 
+    /* position: fixed; */
     
 }
+h1{
+    position: fixed;
+}
 img{
-    display: block;
-    margin-left: auto;
+    position: absolute;
+    /* display: block; */
+    margin-left:2%;
     margin-right: auto;
     width: 50%;
+
+
+}
+.col-8{
+    margin-left:40%;
 }
 
+#kanan{
+    margin-left: 40%;
+}
+
+#kiri{
+    margin-left: 35%;
+}
+.second-judul, .judul{
+    font-size:200%;
+    font-family: sans-serif;
+    font-weight: 700;
+}
+.utility{
+    margin-left:10%
+}
+.berhenti{
+    margin-left:20%;
+}
 button{
     /* margin-top: 2%; */
     width: 30%;
@@ -45,14 +74,14 @@ button:hover {
     transform: scale(1.3)
  }
 .jumbotron{
-    position: solid;
-    margin-top: 1%;
-    margin-bottom: 2%;
-    margin-left: 0%;
-    margin-right: 10%;
+    margin-top: auto;
+    margin-bottom: 10%;
+    margin-left: 15%;
+    margin-right: auto;
 }
 .container{
-    /* position:fixed; */
+    /* position: initial; */
+    margin-top: 20%;
     border: 2px dashed green;
     /* margin-left: 10%; */
     width:40%;
@@ -72,7 +101,33 @@ button:hover {
 
 /* // Medium devices (tablets, 768px and up) */
 @media (max-width: 768.98px) {
-    /*  */
+    .judul{
+        font-size: 100%;
+    }
+    .spinner-grow{
+        width: 10%;
+        height:10%;
+    }
+    .second-judul{
+        font-weight: 200;
+    }
+    .container{
+        /* position:fixed; */
+        border: 2px dashed green;
+        /* margin-left: 10%; */
+        width:70%;
+        justify-content:center;
+    }
+    .berhenti{
+        margin-top: 10%;
+    }
+    button{
+        /* margin-top: 2%; */
+        width: 100%;
+        height: 100%;
+        margin-left: auto;
+    
+    }
  }
 
 /* // Large devices (desktops, 992px and up) */
