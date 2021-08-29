@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS boostrap Online -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!-- CSS Boostrap Offline -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap" rel="stylesheet">
+<!-- boostrap 4 -->
+<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"> -->
+    <!-- CSS Local -->
+	<!-- <link rel="stylesheet" href="index.css"> -->
+	<style>
+body{
+    background-image: url('../template.jpg');
+    /* align-content: center;    */
+    margin:0;
+    padding:0; 
+    /* position: fixed; */
+    
+}
+h1{
+    position: fixed;
+}
+img{
+    position: absolute;
+    /* display: block; */
+    margin-left:2%;
+    margin-right: auto;
+    width: 50%;
+
+
+}
+.img-thumbnail{
+	padding: .25rem;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: .25rem;
+    max-width: 100%;
+	margin-left: 15%;
+    width: 800px;
+	height: 300px;
+
+}
+.col-8{
+    margin-left:40%;
+}
+
+#kanan{
+    margin-left: 40%;
+}
+
+#kiri{
+    margin-left: 35%;
+}
+.second-judul, .judul{
+    font-size:200%;
+    font-family: sans-serif;
+    font-weight: 700;
+}
+.utility{
+    margin-left:10%
+}
+.refresh{
+    margin-left:20%;
+}
+button{
+    /* margin-top: 2%; */
+    width: 30%;
+    height: 100%;
+    margin-left: auto;
+
+}
+.pic{
+    width: auto;
+    margin-left: 10%;
+
+}
+hr{
+    width:50%;
+    margin: auto;
+    color: rgb(26, 54, 179);
+}
+.cam{
+    text-align:center;
+    /* margin-left: 20%; */
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+source{
+    margin-top:20%;
+    position: fixed;
+}
+button:hover {
+    box-shadow: 30%;  
+    transform: scale(1.3)
+ }
+.jumbotron{
+    margin-top: auto;
+    margin-bottom: 10%;
+    margin-left: 15%;
+    margin-right: auto;
+}
+.container{
+    /* position: initial; */
+    margin-top: 20%;
+    border: 2px dashed green;
+    /* margin-left: 10%; */
+    width:50%;
+    justify-content:center;
+}
+.img-fluid{
+    position: fixed;
+    margin-top: 4%;
+    margin-left: 28%;
+    margin-right: 30%;
+} 
+footer{
+    width:auto;
+    margin-top:4%;
+     background-color:rgb(222, 222, 226);
+     text-align:center;
+     font-family: monospace;
+     padding-top: 2%;
+     padding-bottom: 2%;
+
+ }
+ .foo{
+    font-family: sans-serif;
+    font-size: 100%;
+ }
+/* Mobile */
+/* // Small devices (landscape phones, 576px and up) */
+@media (max-width: 576.98px) {
+    /*  */
+ }
+
+/* // Medium devices (tablets, 768px and up) */
+@media (max-width: 768.98px) {
+
+    .judul{
+        font-size: 100%;
+        position: relative;
+    }
+    .spinner-grow{
+        width: 5%;
+        height:5%;
+    }
+    .second-judul{
+        padding-top: 5%;
+        font-weight: 200;
+        font-size: 100%;
+    }
+    hr{
+        width:80%;
+        margin: auto;
+        color: rgb(26, 54, 179);
+    }
+    button:hover {
+        box-shadow: 10%;  
+        transform: scale(1.2)
+     }
+    .container{
+        position:absolute;
+        margin-top:40%;
+        border: 2px dashed green;
+        /* margin-left: 10%; */
+        width:100%;
+        justify-content:center;
+    }
+
+    button{
+        /* margin-top: 2%; */
+        width: 50%;
+        height: 100%;
+        margin-left: auto;
+    
+    }
+    img{
+        position:absolute;
+        /* display: block; */
+       /* padding-left:30%; */
+        width: 90%;
+        height:20%;
+        margin-left:-18%;
+        padding-left:auto;
+    
+    }
+    .img-fluid{
+        /* position: absolute; */
+        margin-top:10%;
+        margin-left:auto;
+        margin-right:auto;
+        padding: auto;
+    } 
+    .col-8{
+        margin-left:30%;
+    }
+    #maju, #mundur{
+        padding-left:5%;
+    }
+    #kanan{
+        margin-left: 40%;
+        /* padding-left: 10%; */
+    }
+    
+    #kiri{
+        margin-left: 10%;
+    }
+    #berhenti{
+        margin-left: -5%;
+    }
+    .refresh{
+        margin-top: -20%;
+        margin-left: 50%;
+    }
+    .utility{
+        margin-left:5%;
+    }
+    footer{
+        text-align:center;
+        font-family: monospace;
+        padding-top: 2%;
+        padding-bottom: 5%;
+    }
+    .foo{
+        font-family: sans-serif;
+        font-size: 90%;
+     }
+ }
+
+/* // Large devices (desktops, 992px and up) */
+@media (max-width: 991.98px) { 
+    /*  */
+ }
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (max-width: 1199.98px) { 
+    /*  */
+}
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (max-width: 1399.98px) { 
+    /*  */
+ }
+	</style>
+	<title>Live Streaming</title>
+  </head>
+
+
+  <!-- Body -->
+  <body>
+    <h1 class="judul">Live Streaming <div class="spinner-grow text-danger" role="status">
+	</div></h1>
+	<h2 class="second-judul text-center" >Prototype Robot Personal Asisstant Keamanan<hr></h2>
+	<h4 class="cam">Kamera</h4>
+	<div class="container-fluid">
+	<picture class="pic">
+	
+		<!-- Note : if device(raspberry is ready), please disable script below  -->
+	  <!-- <source srcset="https://source.unsplash.com/random/800x300" type="image/svg+xml" > -->
+
+	  <!-- do not disable -->
+	  <img src="{{ url_for('video_feed')}}" class= "img-thumbnail text-center" alt="No Response!. Please Check Your WebCam!. if done, Please Click Refresh button!">
+	</picture>
+</div>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script type=text/javascript>
+        $(function() {
+          $('a#maju').bind('click', function() {
+            $.getJSON('/maju',
+                function(data) {
+              //do nothing
+            });
+        return false;
+      });
+    });
+</script>
+
+<script type=text/javascript>
+	$(function() {
+	  $('a#kanan').bind('click', function() {
+		$.getJSON('/kanan',
+			function(data) {
+		  //do nothing
+		});
+	return false;
+  });
+});
+</script>
+
+<script type=text/javascript>
+	$(function() {
+	  $('a#kiri').bind('click', function() {
+		$.getJSON('/kiri',
+			function(data) {
+		  //do nothing
+		});
+	return false;
+  });
+});
+</script>
+
+<script type=text/javascript>
+	$(function() {
+	  $('a#mundur').bind('click', function() {
+		$.getJSON('/mundur',
+			function(data) {
+		  //do nothing
+		});
+	return false;
+  });
+});
+</script>
+
+<script type=text/javascript>
+	$(function() {
+	  $('a#berhenti').bind('click', function() {
+		$.getJSON('/berhenti',
+			function(data) {
+		  //do nothing
+		});
+	return false;
+  });
+});
+</script>
+
+<div class="container">
+	<h4 class="text-center">Controller</h4>
+	<div class="rows">
+		<div class="col-8">
+			<a href="#" id="maju"><button type="button" class="btn btn-secondary">Maju</i></button></a>
+		</div>
+		</div>
+		<br>
+		<!-- Awal -->
+		<div class="row">
+			<div class="col-6">
+				<a href="#"id="kiri"><button type="button" class="btn btn-secondary"> Kiri</button></a>
+			</div>
+			<div class="col-6">
+				<a href="#" id="kanan"><button type="button" class="btn btn-secondary"> kanan</button> </a>
+			</div>
+		  </div>
+<br>
+<div class="row">
+	<div class="col-8">
+		<a href="#" id="mundur"><button type="button" class="btn btn-secondary">Mundur</button></a>
+	</div>
+	</div>
+	<br>
+		<div class="utility">
+			<a href="#" id="berhenti"><button type="button" class="btn btn-danger">Berhenti </button></a>
+			<a href="#" id="Refresh"><button type="button" class="btn btn-warning refresh">Refresh </button></a>
+		</div>
+		<br>
+	</div>
+<div class="jumbotron-fluid">
+<footer class="footer">
+	<h6 class="foo">Copyright &copy;2021. Laboratorium Multimedia & Robotika Universitas Gunadarma</h6>
+</footer>
+	</div>
+
+	<!-- Javascript components -->
+	<!-- <script src="ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="index.js"></script> -->
+
+	<!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+  </body>
+</html>
