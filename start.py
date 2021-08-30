@@ -67,14 +67,15 @@ def detect_motion(frameCount):
 		# read the next frame from the video stream, resize it,
 		# convert the frame to grayscale, and blur it
 		frame = vs.read()
-		frame = imutils.resize(frame, width=400)
+		frame = imutils.resize(frame, width=700) #width= 400
 		gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
 		gray = cv2.GaussianBlur(gray, (7, 7), 0)
 		# grab the current timestamp and draw it on the frame
 		timestamp = datetime.datetime.now()
 		cv2.putText(frame, timestamp.strftime(
-			"%d %b %Y (%H:%M:%S)"), (10, frame.shape[0] - 10),
+			"%d %b %Y (%H:%M:%S)"), (1, frame.shape[0] - 1),
 			cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 3)
+		# update (10, frame.shape[0] - 10 ))
 
 		# continue to process the frame
 		if total > frameCount:
