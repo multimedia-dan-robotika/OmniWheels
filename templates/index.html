@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS boostrap Online -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <!-- CSS Boostrap Offline -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap" rel="stylesheet">
-    <!-- CSS Local -->
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <!-- Ajax -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	<title>Live Streaming</title>
   </head>
 
@@ -19,8 +19,8 @@
   <body>
     <h1 class="judul">Live Streaming <div class="spinner-grow text-danger" role="status">
 	</div></h1>
-	<h2 class="second-judul text-center" >Prototype Robot Personal Asisstant Keamanan<hr></h2>
-	<h4 class="cam">Kamera</h4>
+	<h2 class="second-judul text-center" >Robot Personal Assistant Security<hr></h2>
+	<h4 class="cam">Camera</h4>
 	<div class="container-fluid">
 	<picture class="pic">
 	
@@ -28,70 +28,9 @@
 	  <!-- <source srcset="https://source.unsplash.com/random/800x300" type="image/svg+xml" > -->
 
 	  <!-- do not disable -->
-	  <img src="{{ url_for('video_feed')}}" class= "img-thumbnail text-center" alt="No Response!. Please Check Your WebCam!. if done, Please Click Refresh button!">
+	  <img src="{{ url_for('video_feed')}}" class= "img-thumbnail text-center" alt="No Response!. Please Check Your WebCam!">
 	</picture>
 </div>
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-	<script type=text/javascript>
-        $(function() {
-          $('a#maju').bind('click', function() {
-            $.getJSON('/maju',
-                function(data) {
-              //do nothing
-            });
-        return false;
-      });
-    });
-</script>
-
-<script type=text/javascript>
-	$(function() {
-	  $('a#kanan').bind('click', function() {
-		$.getJSON('/kanan',
-			function(data) {
-		  //do nothing
-		});
-	return false;
-  });
-});
-</script>
-
-<script type=text/javascript>
-	$(function() {
-	  $('a#kiri').bind('click', function() {
-		$.getJSON('/kiri',
-			function(data) {
-		  //do nothing
-		});
-	return false;
-  });
-});
-</script>
-
-<script type=text/javascript>
-	$(function() {
-	  $('a#mundur').bind('click', function() {
-		$.getJSON('/mundur',
-			function(data) {
-		  //do nothing
-		});
-	return false;
-  });
-});
-</script>
-
-<script type=text/javascript>
-	$(function() {
-	  $('a#berhenti').bind('click', function() {
-		$.getJSON('/berhenti',
-			function(data) {
-		  //do nothing
-		});
-	return false;
-  });
-});
-</script>
-
 <div class="container">
 	<h4 class="text-center">Controller</h4>
 	<div class="rows">
@@ -118,21 +57,18 @@
 	<br>
 		<div class="utility">
 			<a href="#" id="berhenti"><button type="button" class="btn btn-danger">Berhenti </button></a>
-			<a href="#" id="Refresh"><button type="button" class="btn btn-warning refresh">Refresh </button></a>
+			<a href="#" id="refresh"><button type="button" class="btn btn-warning refresh "  disabled >Refresh </button></a>
 		</div>
 		<br>
-	</div>
+</div>
 <div class="jumbotron-fluid">
-<footer class="footer">
-	<h6 class="foo">Copyright &copy;2021. Laboratorium Multimedia & Robotika Universitas Gunadarma</h6>
-</footer>
-	</div>
+    <footer class="footer">
+        <h6 class="foo">Copyright &copy; 2021. Laboratorium Multimedia & Robotika Universitas Gunadarma</h6>
+    </footer>
+</div>
 
 	<!-- Javascript components -->
-	<!-- <script src="ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-	<script src="index.js"></script> -->
-
-	<!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="{{ url_for('static', filename='index.js') }}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
   </body>
 </html>

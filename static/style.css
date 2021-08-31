@@ -1,10 +1,6 @@
 body{
-    background-image: url('../template.jpg');
-    /* align-content: center;    */
     margin:0;
     padding:0; 
-    /* position: fixed; */
-    
 }
 h1{
     position: fixed;
@@ -50,6 +46,7 @@ img{
 }
 .refresh{
     margin-left:20%;
+    cursor: no-drop;
 }
 button{
     /* margin-top: 2%; */
@@ -107,7 +104,8 @@ button:hover {
 footer{
     width:auto;
     margin-top:4%;
-     background-color:rgb(222, 222, 226);
+     background-color:rgb(113, 113, 173);
+     color: white;
      text-align:center;
      font-family: monospace;
      padding-top: 2%;
