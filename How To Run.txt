@@ -1,4 +1,5 @@
 HOW TO RUN :
-
 python3 start.py
 ------------------------------
+jika ada error yang menyebabkan library yang belum terinstall. mohon diinstal terlebih dahulu
+example : pip3 install imutils
