@@ -11,8 +11,6 @@
   
 <h2>🧐 Features</h2>
 
-Here're some of the project's best features:
-
 *   Artificial Intelligen base on Object Detection
 *   Web base Controller
 
@@ -29,39 +27,43 @@ sudo apt-get update
 ``` bash
 sudo apt-get upgrade
 ```
+<p>3. Clone Project OmniWheels : </p>
 
-<p>3. cari folder OmniWheels : </p>
+``` bash
+git clone https://github.com/multimedia-dan-robotika/OmniWheels.git
+```
+<p>4. cari folder OmniWheels : </p>
 
 ``` bash
 cd /OmniWheels
 ```
 
-<p>4. Jalankan perintah berikut :</p>
+<p>5. Jalankan perintah berikut :</p>
 
 ``` python
 python3 start.py
 ```
 
-<p>5. Bila menemukan error seperti Library Tidak terinstal. Maka lakukan instalasi library yang digunakan seperti contoh dibawah : </p>
+<p>6. Bila menemukan error seperti Library Tidak terinstal. Maka lakukan instalasi library yang digunakan seperti contoh dibawah : </p>
 
 
 ``` bash
 sudo pip3 install imutils
 ```
 
-<p>6. kalian akan melihat IP address ketika tidak terjadi error saat program start.py dijalankan seperti contoh dibawah : </p>
+<p>7. kalian akan melihat IP address ketika tidak terjadi error saat program `start.py` dijalankan seperti contoh dibawah : </p>
 
 ``` http
 http://0.0.0.0:5000
 ```
 
-<p>7. buka Web browser. Pastikan laptop/device kalian terhubung ke jaringan internet yang sama dengan jaringan internet yang ada di raspberry. lalu cari ip address tersebut dengan cara membuka terminal lalu ketikkan seperti dibawah ini :</p>
+<p>8. buka Web browser. Pastikan laptop/device kalian terhubung ke jaringan internet yang sama dengan jaringan internet yang ada di raspberry. lalu cari ip address tersebut dengan cara membuka terminal lalu ketikkan seperti dibawah ini :</p>
 
 ``` bash
 ifconfig
 ```
 
-<p>8. bila sudah terlihat IP address silahkan kalian copy IP tersebut dan kalian pasti di web browser kalian. jangan lupa tambahkan :5000 diakhir IP addres. Seperti pada contoh Dibawah :</p>
+<p>9. bila sudah terlihat IP address silahkan kalian copy IP tersebut dan kalian pasti di web browser kalian. jangan lupa tambahkan `:5000` diakhir IP addres. Seperti pada contoh Dibawah :</p>
 
 ``` http
 http://192.168.1.1:5000
