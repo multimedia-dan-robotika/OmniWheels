@@ -78,11 +78,46 @@ Bila Terjadi bug / Error pada Logika Program Kalian bisa berkontribusi dengan me
 <h2>💻 Built with</h2>
 
 Technologies used in the project:
-
-*   python
-*   HTML
-*   CSS
-*   Javascript
+<table width="320px">
+    <tbody>
+        <tr valign="top">
+            <td width="80px" align="center">
+            <span><strong>Python</strong></span><br>
+            <img height="32px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg">
+            </td>
+            <td width="80px" align="center">
+            <span><strong>Javascript</strong></span><br>
+            <img height="32" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg">
+            </td>
+            <td width="80px" align="center">
+            <span><strong>HTML</strong></span><br>
+            <img height="32" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg">
+            </td>
+            <td width="80px" align="center">
+            <span><strong>CSS</strong></span><br>
+            <img height="32px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg">
+            </td>
+      </tr>
+      <tr valign="top">
+            <td width="80px" align="center">
+            <span><strong>Flask Framework</strong></span><br>
+            <img height="32px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg">
+            </td>
+            <td width="80px" align="center">
+            <span><strong>OpenCV</strong></span><br>
+            <img height="32" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg">
+            </td>   
+            <td width="80px" align="center">
+            <span><strong>Numpy</strong></span><br>
+            <img height="32" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg">
+            </td>  
+            <td width="80px" align="center">
+            <span><strong>CSS</strong></span><br>
+            <img height="32px"src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/raspberrypi/raspberrypi-original.svg" >  
+            </td>
+      </tr>
+    </tbody>
+</table>
    
 Library Used In the Project : 
 
