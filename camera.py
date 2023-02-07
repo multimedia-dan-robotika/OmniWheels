@@ -1,5 +1,6 @@
 from threading import Thread, Lock
-import cv2, time
+import cv2
+import time
 
 
 class CameraStream(object):
