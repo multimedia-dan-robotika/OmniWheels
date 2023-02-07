@@ -131,4 +131,3 @@ Library Used In the Project :
 |  threading  | https://pypi.org/project/threaded/|
 
 > Note: Kunjungi link tersebut bila terjadi error
-
