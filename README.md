@@ -44,26 +44,19 @@ cd /OmniWheels
 python3 start.py
 ```
 
-<p>6. Bila menemukan error seperti Library Tidak terinstal. Maka lakukan instalasi library yang digunakan seperti contoh dibawah : </p>
-
-
-``` bash
-sudo pip3 install imutils
-```
-
-<p>7. kalian akan melihat IP address ketika tidak terjadi error saat program `start.py` dijalankan seperti contoh dibawah : </p>
+<p>6. kalian akan melihat IP address ketika tidak terjadi error saat program `start.py` dijalankan seperti contoh dibawah : </p>
 
 ``` http
 http://0.0.0.0:5000
 ```
 
-<p>8. buka Web browser. Pastikan laptop/device kalian terhubung ke jaringan internet yang sama dengan jaringan internet yang ada di raspberry. lalu cari ip address tersebut dengan cara membuka terminal lalu ketikkan seperti dibawah ini :</p>
+<p>7. buka Web browser. Pastikan laptop/device kalian terhubung ke jaringan internet yang sama dengan jaringan internet yang ada di raspberry. lalu cari ip address tersebut dengan cara membuka terminal lalu ketikkan seperti dibawah ini :</p>
 
 ``` bash
 ifconfig
 ```
 
-<p>9. bila sudah terlihat IP address silahkan kalian copy IP tersebut dan kalian pasti di web browser kalian. jangan lupa tambahkan `:5000` diakhir IP addres. Seperti pada contoh Dibawah :</p>
+<p>8. bila sudah terlihat IP address silahkan kalian copy IP tersebut dan kalian pasti di web browser kalian. jangan lupa tambahkan `:5000` diakhir IP addres. Seperti pada contoh Dibawah :</p>
 
 ``` http
 http://192.168.1.1:5000
@@ -130,4 +123,49 @@ Library Used In the Project :
 | netifaces  | https://pypi.org/project/netifaces/|
 |  threading  | https://pypi.org/project/threaded/|
 
-> Note: Kunjungi link tersebut bila terjadi error
+> Note: Link diatas merupakan dokumetasi resmi. Silahkan dikunjungi untuk menambah wawasan.
+
+
+<h2>🧐 Troubleshoot </h2>
+<p>Jika Mengalami error seperti dibawah :  </p>
+
+``` bash
+Traceback (most recent call last):
+  File "/home/pi/OmniWheels/start.py", line 1, in <module>
+    import cv2
+ModuleNotFoundError: No module named 'cv2'
+```
+
+<p> Solusinya adalah kalian harus menginstall cv2 (OpenCV). berikut command untuk menginstall cv2 </p>
+  
+  ``` bash
+sudo apt-get install python3-pip
+```
+
+<p>Jika Mengalami error seperti dibawah :  </p>
+
+``` bash
+Traceback (most recent call last):
+  File "/home/pi/OmniWheels/start.py", line 2, in <module>
+    import imutils
+ModuleNotFoundError: No module named 'imutils'
+```
+<p> Solusinya adalah kalian harus menginstall imutils. berikut command untuk menginstall imutils </p>
+  
+  ``` bash
+sudo pip3 install imutils
+```
+<p>Jika Mengalami error seperti dibawah :  </p>
+
+``` bash
+Traceback (most recent call last):
+  File "/home/pi/OmniWheels/start.py", line 9, in <module>
+    import netifaces as ni
+ModuleNotFoundError: No module named 'netifaces'
+```
+<p> Solusinya adalah kalian harus menginstall netifaces. berikut command untuk menginstall netiface </p>
+  
+  ``` bash
+sudo pip3 install netifaces
+```
+
