@@ -17,8 +17,8 @@ while True:
                     str(sampleNum)+".jpg", gray[y:y+h, x:x+w])
         cv2.rectangle(img, (x, y), (x+w, y+h), (255, 0, 0), 2)
         cv2.waitKey(100)
-    cv2.imshow("face", img)
-    cv2.waitKey(1)
+        cv2.imshow("face", img)
+        cv2.waitKey(1)
     if (sampleNum >= 100):
         print("Finished!")
         break
