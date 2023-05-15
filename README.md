@@ -41,14 +41,14 @@ cd /OmniWheels
  ``` python
  sudo apt-get install python-pip
  ``` 
- sudo pip3 --version
+ sudo pip3 --version (optional)
  ```
  <p>6. Install Flask :</p>
  
  ``` flask 
  sudo pip3 install Flask 
  ```
- flask --version
+ flask --version (optional)
  ```
  <p>5. Untuk mengekspor Flask ke file `start.py` :</p>
  
@@ -60,7 +60,7 @@ cd /OmniWheels
  ```flask
  flask run 
  ```
- <p>7. kalian akan melihat IP address ketika tidak terjadi error saat program `start.py` dijalankan seperti contoh dibawah   :</p>
+ <p>7. Kalian akan melihat IP address seperti contoh dibawah jika tidak terjadi eror :</p>
  
  ```http
  http://127.0.0.1:5000
@@ -70,12 +70,12 @@ cd /OmniWheels
  ```flask 
  flask run -host = 0.0.0.0
  ```
- <p>9. IP ini akan membuat web menjadi public  :</p>
+ <p>9. IP ini menjadi IP Public yang dapat diakses siapa saja  :</p>
   
   ```http
   http://0.0.0.0:5000
   ```
-  Jika kalian membuka IP address sebelumnya yang terdapat pada langkah ke.7 maka web tersebut akan eror, dan web akan jalan jika kalian     memakai IP address ini. 
+ <p Jika kalian membuka IP address sebelumnya yang terdapat pada langkah ke.7 maka web tersebut akan eror, dan web akan jalan jika kalian     memakai IP address ini. </p>
 
 <p>10. Untuk memastikan kembali apakah program berjalan maka Jalankan perintah berikut :</p>
 
@@ -88,7 +88,7 @@ python3 start.py
 ``` http
 http://0.0.0.0:5000
 ```
-PROGRAM BERHASIL BERJALAN TANPA MENGGUNAKAN INTERNET  
+<p> PROGRAM BERHASIL BERJALAN TANPA MENGGUNAKAN INTERNET </p>  
 
 <h2>🍰 Contribution Guidelines:</h2>
 
