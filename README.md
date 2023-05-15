@@ -36,30 +36,59 @@ git clone https://github.com/multimedia-dan-robotika/OmniWheels.git
 ``` bash
 cd /OmniWheels
 ```
+<p>5. Install python :</p>
+  
+ ``` python
+ sudo apt-get install python-pip
+ ``` 
+ sudo pip3 --version
+ ```
+ <p>6. Install Flask :</p>
+ 
+ ``` flask 
+ sudo pip3 install Flask 
+ ```
+ flask --version
+ ```
+ <p>5. Untuk mengekspor Flask ke file `start.py` :</p>
+ 
+ ```export Flask 
+ export FLASK_APP_start.py
+ ```
+ <p>6. Running Flask start.py :</p>
+ 
+ ```flask
+ flask run 
+ ```
+ <p>7. kalian akan melihat IP address ketika tidak terjadi error saat program `start.py` dijalankan seperti contoh dibawah   :</p>
+ 
+ ```http
+ http://127.0.0.1:5000
+ ```
+ <p>8. Jalankan perintah berikut :</p>
+ 
+ ```flask 
+ flask run -host = 0.0.0.0
+ ```
+ <p>9. IP ini akan membuat web menjadi public  :</p>
+  
+  ```http
+  http://0.0.0.0:5000
+  ```
+  Jika kalian membuka IP address sebelumnya yang terdapat pada langkah ke.7 maka web tersebut akan eror, dan web akan jalan jika kalian     memakai IP address ini. 
 
-<p>5. Jalankan perintah berikut :</p>
+<p>10. Untuk memastikan kembali apakah program berjalan maka Jalankan perintah berikut :</p>
 
 ``` python
 python3 start.py
 ```
 
-<p>6. kalian akan melihat IP address ketika tidak terjadi error saat program `start.py` dijalankan seperti contoh dibawah : </p>
+<p>11. kalian akan melihat IP address ketika tidak terjadi error saat program `start.py` dijalankan seperti contoh dibawah : </p>
 
 ``` http
 http://0.0.0.0:5000
 ```
-
-<p>7. buka Web browser. Pastikan laptop/device kalian terhubung ke jaringan internet yang sama dengan jaringan internet yang ada di raspberry. lalu cari ip address tersebut dengan cara membuka terminal lalu ketikkan seperti dibawah ini :</p>
-
-``` bash
-ifconfig
-```
-
-<p>8. bila sudah terlihat IP address silahkan kalian copy IP tersebut dan kalian pasti di web browser kalian. jangan lupa tambahkan `:5000` diakhir IP addres. Seperti pada contoh Dibawah :</p>
-
-``` http
-http://192.168.1.1:5000
-```
+PROGRAM BERHASIL BERJALAN TANPA MENGGUNAKAN INTERNET  
 
 <h2>🍰 Contribution Guidelines:</h2>
 
