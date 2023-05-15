@@ -50,7 +50,7 @@ cd /OmniWheels
  ```
  flask --version (optional)
  ```
- <p>5. Untuk mengekspor Flask ke file `start.py` :</p>
+ <p>7. Untuk mengekspor Flask ke file `start.py` :</p>
  
  ```export Flask 
  export FLASK_APP_start.py
@@ -60,35 +60,35 @@ cd /OmniWheels
  ```flask
  flask run 
  ```
- <p>7. Kalian akan melihat IP address seperti contoh dibawah jika tidak terjadi eror :</p>
+ <p>8. Kalian akan melihat IP address seperti contoh dibawah jika tidak terjadi eror :</p>
  
  ```http
  http://127.0.0.1:5000
  ```
- <p>8. Jalankan perintah berikut :</p>
+ <p>9. Jalankan perintah berikut :</p>
  
  ```flask 
  flask run -host = 0.0.0.0
  ```
- <p>9. IP ini menjadi IP Public yang dapat diakses siapa saja  :</p>
+ <p>10. IP ini menjadi IP Public yang dapat diakses siapa saja  :</p>
   
   ```http
   http://0.0.0.0:5000
   ```
  <p Jika kalian membuka IP address sebelumnya yang terdapat pada langkah ke.7 maka web tersebut akan eror, dan web akan jalan jika kalian     memakai IP address ini. </p>
 
-<p>10. Untuk memastikan kembali apakah program berjalan maka Jalankan perintah berikut :</p>
+<p>11. Untuk memastikan kembali apakah program berjalan maka Jalankan perintah berikut :</p>
 
 ``` python
 python3 start.py
 ```
 
-<p>11. kalian akan melihat IP address ketika tidak terjadi error saat program `start.py` dijalankan seperti contoh dibawah : </p>
+<p>12. kalian akan melihat IP address ketika tidak terjadi error saat program `start.py` dijalankan seperti contoh dibawah : </p>
 
 ``` http
 http://0.0.0.0:5000
 ```
-<p> PROGRAM BERHASIL BERJALAN TANPA MENGGUNAKAN INTERNET </p>  
+<h2> PROGRAM BERHASIL BERJALAN TANPA MENGGUNAKAN INTERNET </h2>  
 
 <h2>🍰 Contribution Guidelines:</h2>
 
