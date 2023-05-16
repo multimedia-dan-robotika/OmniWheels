@@ -168,7 +168,9 @@ ModuleNotFoundError: No module named 'netifaces'
 sudo pip3 install netifaces
 ```
 
-<p>Jika Camera tidak muncul karena bukan kesalahan perangkat, ubah threaded <b>TRUE</b> ke <b> false </b> </p>
-    ``` bash
-  app.run(host='0.0.0.0', port=5000, threaded=false) 
-    ```
+<p>Jika Camera tidak muncul karena bukan kesalahan perangkat, ubah threaded <b>TRUE</b> ke <b> FALSE </b> </p>
+
+  ``` bash
+    app.run(host='0.0.0.0', port=5000, threaded=false)
+
+```
