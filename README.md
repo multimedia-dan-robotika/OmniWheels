@@ -167,6 +167,7 @@ ModuleNotFoundError: No module named 'netifaces'
   ``` bash
 sudo pip3 install netifaces
 ```
+Jika Camera tidak muncul coba untuk non aktifkan fitur thread
 
 <p>Jika Camera tidak muncul karena bukan kesalahan perangkat, ubah threaded <b>TRUE</b> ke <b> FALSE </b> </p>
 
