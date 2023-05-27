@@ -167,11 +167,25 @@ ModuleNotFoundError: No module named 'netifaces'
   ``` bash
 sudo pip3 install netifaces
 ```
-Jika Camera tidak muncul coba untuk non aktifkan fitur thread
 
 <p>Jika Camera tidak muncul karena bukan kesalahan perangkat, ubah threaded <b>TRUE</b> ke <b> FALSE </b> </p>
 
   ``` bash
     app.run(host='0.0.0.0', port=5000, threaded=false)
 
+```
+
+<p>Jika Mengalami error seperti dibawah :  </p>
+
+``` bash
+Traceback (most recent call last):
+  File "/home/pi/testingmodule/tesRPi.py", line 1, in <module>
+    import RPi.GPIO as GPIO
+ModuleNotFoundError: No module named 'RPi'
+```
+
+<p> Solusinya adalah kalian harus menginstall RPi. berikut command untuk menginstall RPi </p>
+  
+  ``` bash
+pip3 install RPi.GPIO
 ```
