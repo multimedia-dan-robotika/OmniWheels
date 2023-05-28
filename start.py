@@ -27,12 +27,12 @@ faceCascade = cv2.CascadeClassifier(cascadePath)
 
 font = cv2.FONT_HERSHEY_SIMPLEX
 
-motorA1 = 27
-motorA2 = 22
-motorB1 = 23
-motorB2 = 24
-motorC1 = 25
-motorC2 = 8
+motorA1 = 27  # A
+motorA2 = 22  # A
+motorB1 = 23  # B
+motorB2 = 24  # B
+motorC1 = 25  # C
+motorC2 = 8   # C
 
 GPIO.setwarnings(False)
 GPIO.setmode(GPIO.BCM)
@@ -189,6 +189,17 @@ def berhenti():
     return render_template('index.html', ip=ip)
 
 
+@app.route('/testing')
+def testing():
+    GPIO.output(motorA1, GPIO.HIGH)
+    GPIO.output(motorA2, GPIO.LOW)
+    GPIO.output(motorB1, GPIO.HIGH)
+    GPIO.output(motorB2, GPIO.LOW)
+    GPIO.output(motorC1, GPIO.HIGH)
+    GPIO.output(motorC2, GPIO.LOW)
+    return render_template('index.html', ip=ip)
+
+
 @app.route("/video_feed")
 def video_feed():
     # return the response generated along with the specific media
@@ -215,6 +226,7 @@ if __name__ == "__main__":
     t.start()
     # start the flask app
     # app.run(host=args["ip"], port=args["port"], debug=True, threaded=True, use_reloader=False)
-    app.run(host='0.0.0.0', port=5000, threaded=True, debug=True) #debug true is added by fauzi
+    app.run(host='0.0.0.0', port=5000, threaded=True,
+            debug=True)  # debug true is added by fauzi
 # release the video stream pointer
 vs.stop()

@@ -1,59 +1,70 @@
 
 console.log("Javascript Connected!");
 // Controller
-$(function() {
-  $('a#maju').bind('click', function() {
+$(function () {
+  $('a#maju').bind('click', function () {
     $.getJSON('/maju',
-        function(data) {
-      //do nothing
-
-    });
-return false;
+      function (data) {
+        //do nothing
+        console.log(data);
+      });
+    return false;
+  });
 });
-});
 
 
-$(function() {
-  $('a#kanan').bind('click', function() {
+$(function () {
+  $('a#kanan').bind('click', function () {
     $.getJSON('/kanan',
-    function(data) {
-  //do nothing
-  
-});
-return false;
-});
+      function (data) {
+        //do nothing
+        console.log(data);
+      });
+    return false;
+  });
 });
 
-$(function() {
-  $('a#kiri').bind('click', function() {
+$(function () {
+  $('a#kiri').bind('click', function () {
     $.getJSON('/kiri',
-    function(data) {
-  //do nothing
- 
-});
-return false;
-});
+      function (data) {
+        //do nothing
+        console.log(data);
+      });
+    return false;
+  });
 });
 
 
-$(function() {
-  $('a#mundur').bind('click', function() {
+$(function () {
+  $('a#mundur').bind('click', function () {
     $.getJSON('/mundur',
-    function(data) {
-  //do nothing
+      function (data) {
+        //do nothing
+        console.log(data);
+      });
+    return false;
+  });
+});
 
-});
-return false;
-});
-});
-
-$(function() {
-  $('a#berhenti').bind('click', function() {
+$(function () {
+  $('a#berhenti').bind('click', function () {
     $.getJSON('/berhenti',
-    function(data) {
-  //do nothing
+      function (data) {
+        //do nothing
+        console.log(data);
+      });
+    return false;
+  });
+});
 
-});
-return false;
-});
+$(function () {
+  $('a#testing').bind('click', function () {
+    $.getJSON('/testing',
+      function (data) {
+        //do nothing
+        console.log(data);
+      });
+    return false;
+  });
 });
