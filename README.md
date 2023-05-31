@@ -110,8 +110,7 @@ Technologies used in the project:
       </tr>
     </tbody>
 </table>
-   
-Library Used In the Project : 
+Library Used In the Project :
 
 | Library | Link |
 | ------ | ------ |
@@ -135,7 +134,7 @@ Traceback (most recent call last):
 ModuleNotFoundError: No module named 'cv2'
 ```
 
-<p> Solusinya adalah kalian harus menginstall cv2 (OpenCV). berikut command untuk menginstall cv2 </p>
+Solusinya adalah kalian harus menginstall cv2 (OpenCV). berikut command untuk menginstall `cv2`
   
   ``` bash
 sudo apt-get install python3-opencv
@@ -149,7 +148,7 @@ Traceback (most recent call last):
     import imutils
 ModuleNotFoundError: No module named 'imutils'
 ```
-<p> Solusinya adalah kalian harus menginstall imutils. berikut command untuk menginstall imutils </p>
+Solusinya adalah kalian harus menginstall imutils. berikut command untuk menginstall `imutils`
   
   ``` bash
 sudo pip3 install imutils
@@ -162,16 +161,16 @@ Traceback (most recent call last):
     import netifaces as ni
 ModuleNotFoundError: No module named 'netifaces'
 ```
-<p> Solusinya adalah kalian harus menginstall netifaces. berikut command untuk menginstall netiface </p>
+ Solusinya adalah kalian harus menginstall netifaces. berikut command untuk menginstall `netifaces`
   
   ``` bash
 sudo pip3 install netifaces
 ```
 
-<p>Jika Camera tidak muncul karena bukan kesalahan perangkat, ubah threaded <b>TRUE</b> ke <b> FALSE </b> </p>
+Jika Camera tidak muncul karena bukan kesalahan perangkat, eksekusi file `camera.py`, bila masih tidak muncul silahkan hapus syntax `threaded=True, debug=True` mejadi seperti dibawah ini pada file `start.py`
 
   ``` bash
-    app.run(host='0.0.0.0', port=5000, threaded=false)
+    app.run(host='0.0.0.0', port=5000)
 
 ```
 
@@ -184,7 +183,7 @@ Traceback (most recent call last):
 ModuleNotFoundError: No module named 'RPi'
 ```
 
-<p> Solusinya adalah kalian harus menginstall RPi. berikut command untuk menginstall RPi </p>
+Solusinya adalah kalian harus menginstall RPi. berikut command untuk menginstall `RPi`
   
   ``` bash
 pip3 install RPi.GPIO
