@@ -27,6 +27,7 @@ faceCascade = cv2.CascadeClassifier(cascadePath)
 
 font = cv2.FONT_HERSHEY_SIMPLEX
 
+# GPIO OUTPUT
 motorA1 = 27
 motorA2 = 22
 motorB1 = 23
@@ -34,6 +35,7 @@ motorB2 = 24
 motorC1 = 25
 motorC2 = 8
 
+# GPIO DEFENITE MOTORS
 GPIO.setwarnings(False)
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(motorA1, GPIO.OUT)
@@ -43,6 +45,7 @@ GPIO.setup(motorB2, GPIO.OUT)
 GPIO.setup(motorC1, GPIO.OUT)
 GPIO.setup(motorC2, GPIO.OUT)
 
+# Wifi Connection
 ni.ifaddresses("wlan0")
 # ni.ifaddresses('{AAE133D9-DAD5-481C-8E22-0E07102471C0}') #wifi
 ip = ni.ifaddresses("wlan0")[ni.AF_INET][0]["addr"]
@@ -50,7 +53,7 @@ ip = ni.ifaddresses("wlan0")[ni.AF_INET][0]["addr"]
 vs = VideoStream(src=0).start()
 time.sleep(2.0)
 
-
+# Route Parameter Website
 @app.route("/")
 def index():
     # return the rendered template
@@ -126,9 +129,9 @@ def generate():
                bytearray(encodedImage) + b'\r\n')
 
 
+# Route parameter maju
 @app.route('/maju')
 def maju():
-
     GPIO.output(motorA1, GPIO.HIGH)
     GPIO.output(motorA2, GPIO.LOW)
     GPIO.output(motorB1, GPIO.HIGH)
@@ -138,7 +141,7 @@ def maju():
 
     return render_template('index.html', ip=ip)
 
-
+# Route parameter mundur
 @app.route('/mundur')
 def mundur():
 
@@ -151,7 +154,7 @@ def mundur():
 
     return render_template('index.html', ip=ip)
 
-
+# Route parameter kanan
 @app.route('/kanan')
 def kanan():
 
@@ -164,7 +167,7 @@ def kanan():
 
     return render_template('index.html', ip=ip)
 
-
+# Route parameter kiri
 @app.route('/kiri')
 def kiri():
 
@@ -177,7 +180,7 @@ def kiri():
 
     return render_template('index.html', ip=ip)
 
-
+# Route parameter berhenti
 @app.route('/berhenti')
 def berhenti():
     GPIO.output(motorA1, GPIO.LOW)
@@ -188,7 +191,7 @@ def berhenti():
     GPIO.output(motorC2, GPIO.LOW)
     return render_template('index.html', ip=ip)
 
-
+# Route parameter video feed / untuk melihat video
 @app.route("/video_feed")
 def video_feed():
     # return the response generated along with the specific media
@@ -215,6 +218,6 @@ if __name__ == "__main__":
     t.start()
     # start the flask app
     # app.run(host=args["ip"], port=args["port"], debug=True, threaded=True, use_reloader=False)
-    app.run(host='0.0.0.0', port=5000, threaded=True, debug=True) #debug true is added by fauzi
+    app.run(host='0.0.0.0', port=5000, threaded=True, debug=True)
 # release the video stream pointer
 vs.stop()

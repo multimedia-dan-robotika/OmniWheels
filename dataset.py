@@ -1,10 +1,11 @@
 import numpy as np
 import cv2
 
+# if camera not found, please check this scirpt and change 0 parameter to 1
 cam = cv2.VideoCapture(0)
 faceDetect = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 
-id = input('enter user id : ')
+id = input('Enter User id : ')
 sampleNum = 0
 while True:
     Cball = 0
@@ -19,6 +20,7 @@ while True:
         cv2.waitKey(100)
         cv2.imshow("face", img)
         cv2.waitKey(1)
+        # Sample pengambilan data
     if (sampleNum >= 100):
         print("Finished!")
         break

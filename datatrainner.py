@@ -4,7 +4,6 @@ import numpy as np
 from PIL import Image
 
 # creating a recognizer
-
 path = 'dataset'
 recognizer = cv2.face.LBPHFaceRecognizer_create()
 
